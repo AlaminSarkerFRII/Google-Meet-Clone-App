@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
 <>
 <Header/>
-      <div class="hero min-h-screen bg-base-200">
+     <div class="hero min-h-screen bg-base-200 ">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" alt="" />
     <div className="w-md ">
@@ -29,7 +29,6 @@ const HomePage = () => {
   </div>
 
 </div>
-
 </>
   );
 };

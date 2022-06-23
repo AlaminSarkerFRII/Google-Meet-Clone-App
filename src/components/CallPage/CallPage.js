@@ -7,13 +7,12 @@ import MeetingInfo from '../UI/MettingInfo/MeetingInfo';
 
 const CallPage = () => {
     return (
-        <div className=''>
-            <video className='h-screen w-full top-0 left-0 object-cover z-[-1] absolute' src="" controls></video>
-
+        <div className='text-white'>
+        <video className='h-screen w-full top-0 left-0 object-cover z-[-1] absolute' src="" controls></video>
             <CallPageHeader/>
-            {/* <CallPageFooter/>
             <MeetingInfo/>
-            <Messenger/> */}
+            <Messenger/>
+            <CallPageFooter/>
         </div>
     );
 };
