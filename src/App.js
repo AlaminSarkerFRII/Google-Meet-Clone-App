@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import {Route,Routes} from "react-router-dom"
-import './App.scss';
+// import './App.scss';
 import CallPage from "./components/CallPage/CallPage";
 import HomePage from "./components/HomePage/HomePage";
 import NotFound from "./components/NotFound/NotFound";
