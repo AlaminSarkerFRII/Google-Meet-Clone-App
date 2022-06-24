@@ -7,7 +7,7 @@ import {MdOutlinePresentToAll,MdOutlineControlCamera,MdMoreVert} from "react-ico
 
 const CallPageFooter = () => {
   return (
-    <div className="bottom-0 text-2xl cursor-pointer absolute w-full h-16 text-white z-50">
+    <div className="bottom-0 text-2xl cursor-pointer absolute w-full h-16 text-white z-[100]">
       <div class=" flex flex-row items-center justify-around p-4 bg-neutral text-neutral-content">
         <div class="flex gap-4 md:place-self-center md:justify-self-end">
         <span> you </span>
@@ -19,7 +19,7 @@ const CallPageFooter = () => {
         <span title="Turn on capture"><FaRegClosedCaptioning/></span>
         <span title="present now"><MdOutlinePresentToAll/></span>
         <span title="more options"><MdMoreVert/></span>
-        <span title="Leave now" className="bg-orange-500"><FcMissedCall/></span>
+        <span title="Leave now" className="bg-orange-600 px-4 rounded-lg"><FcMissedCall/></span>
         </div>
 
         <div class="flex gap-4 md:place-self-center md:justify-self-end">

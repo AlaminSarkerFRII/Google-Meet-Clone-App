@@ -2,32 +2,36 @@ import React from "react";
 import Header from "../UI/Header/Header";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { BsKeyboard } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate()
   return (
 <>
 <Header/>
-     <div class="hero min-h-screen bg-base-200 ">
+     <div class="hero my-10 ">
   <div class="hero-content flex-col lg:flex-row-reverse">
-    <img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" alt="" />
+    <img style={{width:"600px"}} src="https://lh3.googleusercontent.com/g6WWfSMs3V0w2hhsaoc9myxQXmfO3IcRPwIsSo7nUJkNDHFb2JT4bffBiNH50_seojxYfC3AfBz8xNHd5k7tqXVsjRVvHGfJfAPx-zz8Lk7EQ0cPuA=rwu-v1-w1400" alt="" />
     <div className="w-md ">
       <h1 class="text-5xl font-bold">Premium Video Meetings.Now free for every one.</h1>
-      <p class="py-6 mx-auto">We re-engineered the service that we built for secure business
+      <p class="py-6">We re-engineered the service that we built for secure business
            meetings, Google Meet, to make it free and available for all.</p>
       <div className="flex items-center">
-      <button class="btn btn-primary">
-      <AiOutlineVideoCamera className="" />
+      <button onClick={()=>navigate('callpage')} class="btn btn-primary font-bold">
+      <AiOutlineVideoCamera className="mr-2" />
             New Meeting
       </button>
       <div className="flex flex-row justify-center items-center">
-      <BsKeyboard className="" /> 
+      <BsKeyboard className="ml-4" /> 
       <input type="text"placeholder="Enter a code or link" class="input input-bordered input-md w-full max-w-xs ml-4" />
       </div>
-      <a className="ml-4" href="#">Join</a>
+      <a className="ml-4 text-primary" href="#">Join</a>
       </div>
+      <div class="divider border-2"></div>
+      <p>Learn More About <a href="https://meet.google.com/" className="text-primary">Google Meet</a></p>
     </div>
-  </div>
 
+  </div>
 </div>
 </>
   );

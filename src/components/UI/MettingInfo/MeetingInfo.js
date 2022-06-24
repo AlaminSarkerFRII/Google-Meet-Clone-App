@@ -2,14 +2,9 @@ import React from "react";
 import { FiUserPlus } from "react-icons/fi";
 import { FaRegCopy } from "react-icons/fa";
 import { AiTwotoneSecurityScan } from "react-icons/ai";
-import {  useNavigate } from "react-router-dom";
 
 const MeetingInfo = () => {
-  const navigate = useNavigate()
-
-  const handleNavigate =()=>{
-   navigate ("/:id")
-  }
+  
 
   return (
     <div className="ml-10 my-24">
@@ -37,10 +32,11 @@ const MeetingInfo = () => {
           </div>
          </div>
           <div className="flex font-bold">
-            <button onClick={handleNavigate} className="btn btn-primary">
+          <button className="btn btn-primary">
               <FiUserPlus className="text-xl mr-2" />
               Add People
             </button>
+
           </div>
           <p>Or Share this meeting link to connect other's</p>
          <div className="flex items-center justify-end bg-slate-100 "> 
