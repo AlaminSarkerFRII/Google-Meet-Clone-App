@@ -1,6 +1,6 @@
 import React from "react";
 import {FaMicrophoneAlt,FaVideo,FaRegClosedCaptioning} from "react-icons/fa"
-import {FcMissedCall} from "react-icons/fc"
+import {ImPhoneHangUp} from "react-icons/im"
 import {TbRadioactive} from "react-icons/tb"
 import {MdOutlinePresentToAll,MdOutlineControlCamera,MdMoreVert} from "react-icons/md"
 
@@ -19,7 +19,7 @@ const CallPageFooter = () => {
         <span title="Turn on capture"><FaRegClosedCaptioning/></span>
         <span title="present now"><MdOutlinePresentToAll/></span>
         <span title="more options"><MdMoreVert/></span>
-        <span title="Leave now" className="bg-orange-600 px-4 rounded-lg"><FcMissedCall/></span>
+        <span title="Leave now" className="bg-orange-600 text-white px-4 rounded-full"><ImPhoneHangUp/></span>
         </div>
 
         <div class="flex gap-4 md:place-self-center md:justify-self-end">

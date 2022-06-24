@@ -14,11 +14,11 @@ const HomePage = () => {
     <img style={{width:"600px"}} src="https://lh3.googleusercontent.com/g6WWfSMs3V0w2hhsaoc9myxQXmfO3IcRPwIsSo7nUJkNDHFb2JT4bffBiNH50_seojxYfC3AfBz8xNHd5k7tqXVsjRVvHGfJfAPx-zz8Lk7EQ0cPuA=rwu-v1-w1400" alt="" />
     <div className="w-md ">
       <h1 class="text-5xl font-bold">Premium Video Meetings.Now free for every one.</h1>
-      <p class="py-6">We re-engineered the service that we built for secure business
+      <p class="py-6 text-xl">We re-engineered the service that we built for secure business
            meetings, Google Meet, to make it free and available for all.</p>
       <div className="flex items-center">
       <button onClick={()=>navigate('callpage')} class="btn btn-primary font-bold">
-      <AiOutlineVideoCamera className="mr-2" />
+      <AiOutlineVideoCamera className="mr-2 text-xl" />
             New Meeting
       </button>
       <div className="flex flex-row justify-center items-center">
